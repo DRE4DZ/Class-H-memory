@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Website kenangan kelas H SMP [SMPN 2 MANDIRANCAN]. Lihat foto, video, quote, dan biodata teman-teman sekelas!">
+  <link rel="stylesheet" href="style.css">
+  <title>memori kelas h SMP (smpn 2 mandirancan)</title>
+</head>
+<body>
+
+  <!-- tombol ini ahayy -->
+<button id="toggle-nav" onclick="toggleNavigation()">☰ Menu</button>
+<div class="navigasi" id="nav-menu">
+  <button onclick="scrollToSection('Beranda')">🏠 Beranda</button>
+  <button onclick="scrollToSection('Tentang')">📄 Tentang web</button>
+  <button onclick="scrollToSection('Biodata')">👽 Biodata</button>
+  <button onclick="scrollToSection('Foto')">🖼 Foto</button>
+  <button onclick="scrollToSection('Video')">🎥 Video</button>
+  <button onclick="scrollToSection('Kontribusi')">👥 Contributor</button>
+  <button onclick="scrollToSection('About')">🌿🚬 About me</button>
+</div>
+  <!--section/konten-->
+  <section id="Beranda" class="konten">
+    <div class="home">
+    <h1 style="font-size: 30px;">Selamat datang di web</h1>
+      <h2 style="font-size: 25px;">Memori kelas H</h2>
+      <img src="https://media1.giphy.com/media/HLrja6QJDdHmcKdRVO/giphy.gif?cid=6c09b952ns88puto7fnz0u0glxkjvkf6hwzs7sbqsh6v9bkm&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g">
+    </div>
+  </section>
+
+  <section id="Tentang" class="konten">
+    <h1>Arsip kelas H: Kepingan Memori yang Layak Diingat Atau Dilupakan</h1>
+    <p>Buat yang pernah ngerasain:</p>
+    <ul>
+      <li>Ketawa ngakak di jam kosong karena joke receh</li>
+      <li>Foto kelas yang selalu ada yang kedip atau mukanya kecuekan</li>
+      <li>Chat grup isi ribuan 'Hadir' sama sticker random</li>
+    </ul>
+    <p>Website ini cuma pengingat bahwa di antara seabrek tugas dan remedial, ada momen-momen <em>casual</em> yang bikin SMP jadi seru.</p>
+    <p><strong>Bukan buat pamer</strong>, tapi buat nanti-nanti pas kita pada sibuk kuliah atau kerja, buka ini sambil <em>flashback</em>: <em>'Dulu kita segila ini ya?'</em></p>
+    <p><strong>Yang bisa ditemuin di sini:</strong></p>
+    <ul>
+      <li>Bukti visual bahwa kita pernah punya fase alay (siap-siap malu)</li>
+      <li>Koleksi meme kelas edisi limited</li>
+      <li><em>Throwback</em> kejadian-kejadian legendary kayak pas kena razia atau ulangan dadakan</li>
+    </ul>
+    <p><strong>Catatan Penting:</strong></p>
+    <ul>
+      <li>Yang minta dihapusin fotonya: Tenang, ini bukan Instagram, viewer-nya cuma kita-kita doang 😌</li>
+      <li>Kualitas foto? Mohon maklum, ini dokumentasi bukan portfolio fotografi</li>
+    </ul>
+    <p><em>"Kelas 8H mungkin cuma sementara, tapi meme-nya abadi."</em></p>
+    <p>Ini bukan goodbye, ini <em>see you later</em>. Next level: 9H with upgraded chaos! ✊</p>
+  </section>
+
+   <section id="Biodata" class="konten">
+    <h1>Daftar Siswa Kelas H</h1>
+    <div id="daftar-siswa">
+      <!-- Profil siswa akan disisipkan di sini oleh JavaScript -->
+    </div>
+  </section>
+  
+  <section id="Foto" class="konten">
+    <h1>COMING SOON</h1>
+     <h4>BE PATIENT</h4>
+  </section>
+  
+  <section id="Video" class="konten">
+    <h1>COMING SOON</h1>
+     <h4>BE PATIENT</h4>
+  </section>
+  
+  <section id="Kontribusi" class="konten">
+    <div class="contributor">
+      <h2>BIG THANKS TO</h2>
+      <p><strong>DRE4DZ</strong> - CODER</p>
+      <p><strong>ANISA</strong> - PENYEDIA FOTO DAN VIDEO</p>
+      </div>
+      <hr>
+    <div class="sumber">
+      <h2> SUMBER BELAJAR DAN SUMBER CODE</h2>
+      <ul>
+        <li>GROK</li>
+        <li>DEEPSEEK</li>
+        <li>GEMINI</li>
+        <li>CHAT GPT (ai paling ngawur)</li>
+        <li>YOUTUBE</li>
+        <li>GOOGLE</li>
+      </ul>
+    </div>
+    <hr>
+    <div class="gif">
+    <img src="https://media2.giphy.com/media/SGrH94u2qJwqhu3Ouu/giphy.gif?cid=6c09b9522hcx6axd08ojmi20tzwzilwi1bq538uwgpf7m3j1&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" width="350" height="350">
+       </div>
+  </section>
+ 
+  <section id="About" class="konten">
+   <div class="about">
+
+  <h2>ABOUT DRE4DZ</h2>
+  <img src="https://files.catbox.moe/wjdq5o.bin" alt="DRE4DZ Profile Picture">
+
+  <div>
+    <button class="lang-btn" onclick="showIndo()">Versi Indonesia</button>
+    <button class="lang-btn" onclick="showEnglish()">English Version</button>
+  </div>
+
+<div class="content">
+  <div id="indo">
+    <p>Halo, perkenalkan, aku DRE4DZ. Saat ini aku berumur 15 tahun dan masih duduk di bangku SMP. Aku berasal dari Jawa Barat, Indonesia. Aku sangat tertarik pada dunia coding dan musik, terutama musik yang bergenre Hip Hop.</p>
+
+    <p>Selain coding, aku juga suka ngejelajah ritme dan lirik di genre Hip Hop. Kadang, aku nulis *verse* sendiri atau *mix beats* pakai aplikasi sederhana buat ngekspresin perasaan. Buat aku, coding itu kayak nyusun puzzle—setiap baris kode harus pas biar program jalan lancar. Sama kayak ngeracik lirik, harus ada *flow*-nya biar enak didenger.</p>
+
+    <p>Aku selalu penasaran sama hal-hal baru, baik di dunia programming maupun musik. Projek web ini salah satu cara aku buat belajar sekaligus tunjukin karya-karya kecilku. Siapa tau, nanti bisa gabungin dua hobi ini jadi sesuatu yang keren!</p>
+
+    <p>FUNFACT:</p>
+    <ul>
+      <li>Aku mulai belajar coding dari kelas 4 SD tapi sempat berhenti, lalu mulai lagi di kelas 6 sampai sekarang (walaupun masih suka nunda-nunda belajar).</li>
+      <li>Selain musik dan coding, aku juga suka balapan F1. Tim favoritku di F1 adalah Red Bull.</li>
+      <li>Aku suka sekali belajar hal baru.</li>
+      <li>Impianku adalah bisa meninggalkan Indonesia.</li>
+    </ul>
+  </div>
+
+  <div id="english">
+    <p>Hi, let me introduce myself. I'm DRE4DZ, currently 15 years old and still in junior high school. I'm from West Java, Indonesia. I'm really interested in coding and music, especially Hip Hop music.</p>
+
+    <p>Besides coding, I also love exploring rhythms and lyrics in Hip Hop. Sometimes I write my own *verse* or *mix beats* using simple apps to express myself. For me, coding is like solving a puzzle—every line of code needs to fit perfectly to make the program run smoothly. It's similar to arranging lyrics, where you need the right *flow* to make it sound good.</p>
+
+    <p>I'm always curious about new things, both in programming and music. This web project is one way for me to learn while showing my small creations. Who knows, maybe I can combine these two hobbies into something awesome!</p>
+
+    <p>FUNFACT:</p>
+    <ul>
+      <li>I started learning coding in 4th grade but stopped, then picked it up again in 6th grade until now (though I still procrastinate sometimes).</li>
+      <li>Besides music and coding, I also love F1 racing. My favorite F1 team is Red Bull.</li>
+      <li>I really enjoy learning new things.</li>
+      <li>My dream is to be able to leave Indonesia someday.</li>
+    </ul>
+  </div>
+</div>
+</section>
+ 
+<footer>
+  <div class="container"> 
+    <p>&copy; DRE4DZ | 2025</p>
+    <div class="social">
+      <a href="https://www.instagram.com/duaaaaaaaaaaaaa_2222222?igsh=M3p6c21saWIxOWk0">instagram<i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@pj_kys?_t=ZS-8w47B8lnshe&_r=1">tiktok<i class="fab fa-tiktok"></i></a>
+    </div>
+  </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>

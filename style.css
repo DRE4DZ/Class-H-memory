@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Dasar body */
+body {
+  font-family: 'Arial', Sans-Serif;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 60px; /* Tambah padding di bawah biar konten nggak ketutup footer */
+  background: linear-gradient(to right, #f0f0f0, #cce7ff);
+  color: #333;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Toggle Navbar */
+#toggle-nav {
+  background-color: #007bff;
+  opacity: 50%;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+#nav-menu {
+  position: fixed;
+  top: 70px;
+  left: -200px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.3s ease, left 0.3s ease;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#nav-menu.active {
+  left: 20px;
+}
+
+.navigasi button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 150px;
+}
+
+.navigasi button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Konten */
+.content-wrapper {
+  min-height: calc(100vh - 40px); /* Pastiin ada ruang buat footer */
+}
+
+.konten {
+  display: none;
+  padding: 20px;
+  margin-left: 0;
+  transition: margin-left 0.3s ease;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.konten.active {
+  display: block;
+}
+
+body.menu-open .konten {
+  margin-left: 200px;
+  max-width: 70%;
+}
+
+/* Profile */
+.profil-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.foto-bulat {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profil-container h3, .profil-container p {
+  margin: 4px 0;
+}
+
+/* Sosmed List */
+.sosmed-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: left;
+}
+
+.sosmed-list a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.sosmed-list a:hover {
+  color: #0056b3;
+}
+
+.sosmed-list li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.sosmed-list p {
+  margin: 5px 0;
+}
+
+/* Kontributor */
+.contributor h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+section#Kontribusi ul {
+  list-style: none; /* Hapus bullet points */
+  padding: 0; /* Hapus padding bawaan */
+}
+
+section#Kontribusi li {
+  margin: 10px 0; /* Jarak antar item */
+}
+
+.sumber {
+  opacity: 68%;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 51, 102, 0.8);
+  color: white;
+  padding: 4px;
+  text-align: center;
+  position: fixed; /* Balikin ke fixed */
+  bottom: 0;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  z-index: 900; /* Pastiin di atas konten */
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .social a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.2em;
+}
+
+footer p {
+  font-size: 20px;
+}
+
+/*about*/
+#about {
+  padding: 20px;
+  align-items: center;
+}
+
+.about {
+  max-width: 80%;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.about h2 {
+  font-size: 30px;
+  color: #0b5eb8;
+  margin-bottom: 20px;
+}
+
+.about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lang-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.lang-btn:cover {
+  background-color: #0056b3;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+#indo, #english {
+  display: none;
+}
+
+#indo.active, #english.active {
+  display: block;
+}
+
+.content p {
+  text-align: left;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+strong {
+  color: #0056b3;
+}
+
+/*random*/
+.home img {
+  width: 400px;
+  height: 400px;
+}
+/* Responsivitas */
+@media (max-width: 600px) {
+  .konten {
+    padding: 10px;
+    margin-left: 0;
+    max-width: 90%;
+  }
+
+  body.menu-open .konten {
+    margin-left: 150px;
+    max-width: 80%;
+  }
+
+  .navigasi button {
+    width: 120px;
+    font-size: 14px;
+  }
+
+  #toggle-nav {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
